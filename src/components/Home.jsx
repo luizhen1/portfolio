@@ -3,6 +3,7 @@ import Minhaimg from"../assets/minha-foto.jpg"
 import {MdOutlineKeyboardArrowRight} from "react-icons/md"
 import {Link} from "react-scroll";
 
+
 const Home = () => {
   return (
     <div name="home"
@@ -10,7 +11,7 @@ const Home = () => {
     >
         <div className="max-w-screen-lg mx-auto flex flex-col items-center
         justify-center h-full px-4 md:flex-row">
-            <div className="flex flex-col justify-center h-full">
+            <div className=" mt-9 max-w-screen-sm flex flex-col justify-center h-full">
                 <h2 className="text-4xl sm:text-7xl font-bold text-white">
                     Desenvolvedor Front-End</h2>
                     <p className="text-gray-500 py-4 max-w-md">

@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import {FaBars, FaTimes} from "react-icons/fa"
 import {Link} from "react-scroll"
-import { HiCode } from 'react-icons/hi';
-import { HiChevronLeft } from 'react-icons/hi';
+
+import ScrollButton from './Scrollbutton';
 
 
 function NavBar() {
 
   const[nav, setNav] = useState(false);
+
+
 
   const links = [
     {
@@ -30,16 +32,15 @@ function NavBar() {
       id: 5,
       link: "contato",
     },
+
   ];
   
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-white
      bg-black fixed">
 
-      <div className="flex items-center cursor-pointer mt-2">
-      <HiChevronLeft className="text-3xl text-white-500" />
-        <h1  className="text-5xl font-signature  mr-3 ">Lima</h1>
-        <HiCode className="text-3xl text-white-500 mr-80" />
+      <div className="flex items-center cursor-pointer mt-2 ">
+         <ScrollButton/>
       </div>
 
     
@@ -51,7 +52,7 @@ function NavBar() {
             <li 
             key={id}
             className="px-4 cursor-pointer capitalize font-medium
-            text-white-500 hover:scale-105 duration-200">
+            text-white-500 hover:scale-105 duration-300">
              <Link to={link} smooth duration={500}>
               {link}
               </Link>
@@ -68,7 +69,7 @@ function NavBar() {
 
       {nav &&(
         <ul className="flex flex-col justify-center items-center absolute
-        top-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
+        top-0 w-full h-screen bg-gradient-to-b from-purple-800 to-black text-white">
  
         {links.map(({id, link}) =>(
              <li 

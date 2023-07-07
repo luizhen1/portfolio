@@ -4,7 +4,7 @@ import installNode from '../assets/portfolio/embreve.png'
 import navbar from '../assets/portfolio/embreve.png'
 import reactParallax from '../assets/portfolio/home-page.png'
 import reactSmooth from '../assets/portfolio/embreve.png'
-import reactWeather from '../assets/portfolio/embreve.png'
+import reactWeather from '../assets/portfolio/api.png'
 
 const Portfolio = () => {
 

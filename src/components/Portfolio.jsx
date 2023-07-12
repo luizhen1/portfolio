@@ -6,37 +6,50 @@ import reactParallax from '../assets/portfolio/home-page.png'
 import reactSmooth from '../assets/portfolio/calculadora.png'
 import reactWeather from '../assets/portfolio/api.png'
 
+
+
 const Portfolio = () => {
+
+
+  
 
     const portfolios = [
         {
             id:1,
-            src: arrayDestruct
+            src: arrayDestruct,
+            link: 'https://github.com/luizhen1?tab=repositories'
+           
+            
         },
 
         {
             id:2,
-            src: reactParallax
+            src: reactParallax,
+            link: 'https://github.com/luizhen1?tab=repositories'
         },
 
         {
             id:3,
-            src: navbar
+            src: navbar,
+            link: 'https://github.com/luizhen1?tab=repositories'
         },
 
         {
             id:4,
-            src: reactSmooth
+            src: reactSmooth,
+            link: 'https://github.com/luizhen1?tab=repositories'
         },
 
         {
             id:5,
-            src: installNode
+            src: installNode,
+            link: 'https://github.com/luizhen1?tab=repositories'
         },
 
         {
             id:6,
-            src: reactWeather
+            src: reactWeather,
+            link: 'https://github.com/luizhen1?tab=repositories'
         }
     ]
 
@@ -56,26 +69,36 @@ const Portfolio = () => {
             </div>
     
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-              {portfolios.map(({ id, src }) => (
+              {portfolios.map(({ id, src, link }) => (
                 <div key={id} className="shadow-md shadow-black-500 rounded-lg">
-                  <img
+                  <a href="https://github.com/luizhen1?tab=repositories"><img
                     src={src}
                     alt=""
                     className="rounded-md duration-200 hover:scale-105"
                   />
+                  </a>
                   <div className="flex items-center justify-center">
+
                     {/*
                     <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                       Site
                     </button>
-              */}
-                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                    */}
+                  {/*
+                    <a href={link}  className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                       Code
-                    </button>
+                    </a>
+                    */}
+
+                    
+
+                    
+
                   </div>
                 </div>
               ))}
             </div>
+            
           </div>
         </div>
       );

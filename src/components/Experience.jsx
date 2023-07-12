@@ -4,10 +4,14 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import nextjs from "../assets/node.png";
+import node from "../assets/node.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import mysql from "../assets/mysql.png";
+import vue from "../assets/vue.png";
+import nextjs from "../assets/nextjs.png";
+import angular from "../assets/angular.png";
+import go from "../assets/golang.png";
 
 const Experience = () => {
   const techs = [
@@ -43,7 +47,7 @@ const Experience = () => {
     },
     {
       id: 6,
-      src: nextjs,
+      src: node,
       title: "Node JS",
       style: "shadow-green-400",
     },
@@ -61,6 +65,31 @@ const Experience = () => {
       title: "MySQL",
       style: "shadow-sky-400",
     },
+    {
+      id: 10,
+      src: vue,
+      title: "Vue",
+      style: "shadow-green-400",
+    },
+    {
+      id: 11,
+      src: nextjs,
+      title: "Bootstrap",
+      style: "shadow-purple-500",
+    },
+    {
+      id: 12,
+      src: angular,
+      title: "Angular",
+      style: "shadow-red-500",
+    },
+    {
+      id: 13,
+      src: go,
+      title: "Golang",
+      style: "shadow-sky-500",
+    },
+    
   ];
 
   return (
@@ -68,8 +97,8 @@ const Experience = () => {
       name="experiência"
       className="bg-gradient-to-b from-black to-gray-800 w-full h-screen"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-        <div className="mt-80">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white relative top-56">
+        <div className="mt-96">
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             Experiência
           </p>

@@ -13,7 +13,7 @@ const Home = () => {
         justify-center h-full px-4 md:flex-row">
             <div className=" mt-9 max-w-screen-sm flex flex-col justify-center h-full">
                 <h2 className="text-4xl sm:text-7xl font-bold text-white">
-                    Desenvolvedor Front-End</h2>
+                    Desenvolvedor Full-Stack</h2>
                     <p className="text-gray-500 py-4 max-w-md">
                     Sou um Desenvolvedor Front-End altamente 
                     motivado e apaixonado pela criação de interfaces intuitivas e envolventes. 
